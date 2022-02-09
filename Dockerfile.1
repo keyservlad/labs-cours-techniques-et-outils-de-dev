@@ -1,0 +1,26 @@
+FROM ubuntu
+
+RUN apt update
+RUN apt install git -y
+RUN apt install build-essential -y
+RUN apt install zlib1g
+RUN apt-get install zlib1g-dev
+RUN mkdir boostinstall
+RUN cd boostinstall && apt install wget -y
+RUN cd boostinstall && apt install wget -y
+RUN cd boostinstall && wget https://boostorg.jfrog.io/artifactory/main/release/1.78.0/source/boost_1_78_0.tar.bz2
+RUN cd boostinstall && tar --bzip2 -xf /boostinstall/boost_1_78_0.tar.bz2
+RUN cd boostinstall/boost_1_78_0 && ./bootstrap.sh
+RUN cd boostinstall/boost_1_78_0 && ./b2 install
+RUN cd boostinstall/boost_1_78_0 && ./b2
+RUN cd boostinstall/boost_1_78_0 && ./b2 --with-iostreams
+RUN wget https://cmake.org/files/v3.22/cmake-3.22.2-linux-x86_64.sh
+RUN sh cmake-3.22.2-linux-x86_64.sh --skip-license --prefix=/usr/local/
+
+COPY gitus-StartingPoint/ gitus-StartingPoint/
+
+RUN cd gitus-StartingPoint/ && mkdir build
+RUN cd gitus-StartingPoint/build && cmake /gitus-StartingPoint/
+RUN cd gitus-StartingPoint/build && make
+
+CMD ./gitus-StartingPoint/build/tests/gittests
