@@ -10,7 +10,7 @@ building:
     - apt-get install zlib1g-dev
     - cd /boostinstall/boost_1_78_0
     - ./b2
-    - ./b2 --with-iostreams -a
+    - ./b2 --with-iostreams
     - cd /builds/dinf/cours/h22/igl601/guia2612/gitus-StartingPoint/
     - mkdir build
     - cd ./build/
