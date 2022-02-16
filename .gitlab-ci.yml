@@ -16,9 +16,20 @@ building:
     - printenv
     - cmake ..
     - make
-    - echo "building..."
   artifacts:
     paths:
       - /builds/dinf/cours/h22/igl601/guia2612/gitus-StartingPoint/build/tests/gittests
       - /builds/dinf/cours/h22/igl601/guia2612/gitus-StartingPoint/build/gitus
     expire_in: 2 weeks
+    
+    
+testing:
+  stage: test
+  script:
+    - printenv
+    - pwd
+    - cd ./gitus-StartingPoint/build/
+    - ls 
+    - cd ./tests/
+    - ls
+    - ./gittests
