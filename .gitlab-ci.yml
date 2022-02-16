@@ -13,6 +13,7 @@ building:
     - cd /builds/dinf/cours/h22/igl601/guia2612/gitus-StartingPoint/
     - mkdir build
     - cd ./build/
+    - printenv
     - cmake ..
     - make
     - echo "building..."
