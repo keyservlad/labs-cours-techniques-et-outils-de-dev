@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "0fotAKpptwsgYg6yZWTPvxdN9vXtm/nN5guz9vzQZa02YdKLxZ1E6h02xRCN0J+pptA1b9qnL/d14oiYLjBrNw==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\guia2612\\Documents\\cours_git\\Lab7\\Server\\Server.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\guia2612\\.nuget\\packages\\microsoft.visualstudio.azure.containers.tools.targets\\1.10.9\\microsoft.visualstudio.azure.containers.tools.targets.1.10.9.nupkg.sha512"
+  ],
+  "logs": []
+}

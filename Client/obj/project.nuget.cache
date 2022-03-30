@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "d52QzOYiQ3yQF3eEPJg/nAr6mPlcTW+C2L7HScPfSqrHVNRh75W4ZlviMh80LE/Vx5+3VBtMPbmXKeHhA2e6ag==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\guia2612\\Documents\\cours_git\\Lab7\\Client\\Client.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\guia2612\\.nuget\\packages\\microsoft.visualstudio.azure.containers.tools.targets\\1.10.9\\microsoft.visualstudio.azure.containers.tools.targets.1.10.9.nupkg.sha512",
+    "C:\\Users\\guia2612\\.nuget\\packages\\newtonsoft.json\\12.0.3\\newtonsoft.json.12.0.3.nupkg.sha512"
+  ],
+  "logs": []
+}

@@ -1,0 +1,16 @@
+{
+  "profiles": {
+    "Client": {
+      "commandName": "Project",
+      "environmentVariables": {
+        "SERVER_ADDR": "http://localhost:51799"
+      }
+    },
+    "Docker": {
+      "commandName": "Docker",
+      "environmentVariables": {
+        "SERVER_ADDR": "http://localhost:51799"
+      }
+    }
+  }
+}

@@ -1,0 +1,34 @@
+version: "3"
+services:
+  database:
+    image: mysql
+    ports:
+      - 3306:3306
+    restart: always
+    environment:
+        MYSQL_PASSWORD: toor
+        MYSQL_DATABASE: lab7
+        MYSQL_ROOT_PASSWORD: toor
+    volumes:
+        - mysql-data:/var/lib/mysql
+      
+
+  server:
+        restart: on-failure
+        build:
+            context: .
+            dockerfile: server/Dockerfile
+            
+  client:
+        build:
+            context: .
+            dockerfile: client/Dockerfile
+        environment:
+            SERVER_ADDR: http://server
+        depends_on:
+            - server
+             
+volumes:
+    mysql-data:
+         
+   
